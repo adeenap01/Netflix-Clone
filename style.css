@@ -1,119 +1,248 @@
-body
-{
-  overflow-x: hidden;
-  font-family: sans-serif;
-  /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
+body{
+  padding:0px;
+  margin:0px;
+  color:white;
+  font-family:"Poppins", sans-serif;
+  text-align: center;
 }
-
-
-.header-text
-{
-  margin-top: 20%;
-  margin-left: 23%;
-  position:absolute;
+.bold{
+  font-weight:900;
 }
-.navbar
-{
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/bg1.jpg);
-  background-size: cover;
-  background-position: 50%;
+.btn-transparent{
+  background-color: transparent;
+  color:white;
+  border: 1px solid #6d6d6d;
+  width:129px;
+height: 37px;
+}
+.btn-transparent:hover{
+  color:white;
+}
+.btn-transparent:active{
+  color:white;
+}
+#hindi-lang{
+  bottom:-40px;
+}
+.btn-danger{
+  background-color: red ;
+  color:white ;
+  width: 98px ;
+  height: 37px;
+  margin-left: 6px ;
+  font-family: calibri ;
+
+}
+.btn-danger:hover{
+  background-color: rgb(211, 7, 7) ;
+  color:white ;
+  width: auto;
+  height: 35px;
+  margin-left: 14 px;
+}
+#hero-section{
+  background-image:linear-gradient(0deg, rgba(0,0,0,0.3337710084033614) 0%, rgba(0,0,0,1) 100%), url("images/Netflix-Background.jpg");
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
   height: 100vh;
-  position:absolute;
+  width:100%;
+  margin:0px;
 }
-.header-nav
+.netflix-logo{
+  width: 11.5rem;
+  height: 5.9rem;
+  color: #e10b13;
+  fill: currentColor;
+  display: block;
+}
+.header{
+  margin:0px 150px;
+  position:relative;
+}
+.get-started-div{
+  width:fit-content;
+  margin:auto;
+  padding:0px 50px;
+  input{
+      width: 282px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.3337710084033614) 0%, rgba(0,0,0,0.6530987394957983) 20%);
+      opacity: 80%;
+      color:white;
+      font-size:15px;
+      font-family: "Poppins", sans-serif;
+      height: 50%;
+  }
+}
+#email-req{
+  left:70px;
+  font-weight:700;
+}
+.container{
+  height: 90vh;
+  justify-content: center;
+  h1{
+      font-weight:bolder;
+      letter-spacing:0.2vh;
+      font-size:7vh;
+      font-weight: bold;
+  }
+  button{
+      font-size:23px;
+      font-weight: bold;
+      width:46vh;
+      height: 45px;
+  }
+}
+.container button:hover{
+  background-color: #e50914;
+}
+.border-top{
+  border-top:7px solid rgb(71, 71, 71) ;
+}
+#s1{
+  height:90vh;
+}
+.video{
+  top:12.5vh;
+  left:2vh;
+}
+.video2{
+  top:8vh;
+  left:2vh;
+  video{
+      width:65%;
+  }
+}
+.stranger-things-download{
+  height:25%;
+  width:60%;
+  left:20%;
+  bottom:10%;
+  background-color: #000;
+}
+.roboto-text{
+  font-family: "Roboto", sans-serif;
+}
+.fs-5{
+  font-size:22px ;
+}
+.download-text{
+  width:100%;
+}
+.s2-caption{
+  width:38vw;
+  h4{
+      line-height: 30px;
+      font-weight:normal;
+  }
+}
+#faq-section{
+  height:140vh;
+}
+.QA{
+  div{
+      width:70vw;
+  }
+}
+.question{
+  cursor: pointer;
+}
+.question, .answer{
+  background-color: #484444;
+}
+.question:hover{
+  background-color: #706e6e;
+}
+#footer{
+  color:#bdbdbd;
+  a{
+      color: #bdbdbd;
+  }
+  button{
+      height:6vh;
+      font-weight: lighter;
+      width:fit-content;
+      margin-left:3vw;
+  }
+  h6{
+      margin-left:2vw;
+  }
+  .container{
+      height:fit-content;
+  }
+}
+.call{
+  margin-left:9vw;
+}
+.links{
+  list-style-type: none;
+}
+.links-row{
+  width:80vw;
+  height: fit-content;
+}
+@media only screen and (max-width:1000px)
 {
-  display: flex;
-  margin-bottom: 43%;
-}
-
-.card-1,.card-2,.card-3 ,.card-4
-{
-  border: 10px solid darkgray;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  
-}
-.download-video {
-  width: 2rem;
-  height: 2rem;
-  outline: 2px solid rgb(0, 0, 0);
-  outline-offset: -2px;
-  /* display: block; */
-  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
- margin-left: 280px;
- margin-bottom: 100px;
- 
-
-
-}
-.video1{
-  position: absolute;
-  top:15.5vh;
-  left:143vh;
-  z-index: 1;
-}
-.video2
-{
-  position: absolute;
-  top:3vh;
-  left:150vh;
-  z-index: 1;
-}
-.btn-mobile
-{
-  margin-left: 70px;
-  width: 320px;
-  height: 100px;
-  border-radius: 20px;
-  margin-top: 0px;
-  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) right center no-repeat ;
-   background-size: 3rem;
-    background-size: 3rem;
-    background-position-x: right;
-    
-  
-}
-.default-ltr-cache-1626rqb {
-  /* z-index: -1; */
-  overflow: hidden;
-  /* width: 50%;
-  height: 50%; */
-  /* max-width: 63%;
-  max-height: 47%; */
-  /* position: absolute; */
-  /* top: 40%; */
-  left: 70%;
- width: 550px;
- height: 510px;
- font-size: xx-large;
-}
-.container4
-{
-  border: 10px solid darkgray;
-  border-left: none;
-  border-right: none;
-  /* border-bottom: none; */
-}
-.btn1-div-quest
-{
-  justify-content: space-between;
-  /* margin-left: 10px; */
-}
-.btn-ques
-{
-  width: 1190px;
-  border-radius: 0px;
-}
-.card-body-ques
-{
-  border-radius: 0px;
-}
-.call-ul,.ul-1-footer,.ul-2-footer,.ul-3-footer,.ul-4-footer
-{
-  list-style: none;
-}
-.ul-1-footer,.ul-2-footer,.ul-3-footer,.ul-4-footer
-{
-  justify-content: space-between;
+  .width-100{
+      width:820px;
+      background-size:cover;
+  }
+  #hero-section{
+      width:820px;
+  }
+  .s2-caption{
+      width:100%;
+  }
+  #s1{
+      img{
+          width:50%;
+      }
+      video{
+          width:35%;
+      }
+      .video{
+          top:58px;
+          right:5px;
+      }
+  }
+  #s2{
+      height:1000px;
+  }
+  .s2-txt{
+      margin-top:80px;
+  }
+  #s3{
+      img{
+          width:60%;
+      }
+      video{
+          width:39%;
+      }
+      .video2{
+          top:44px;
+          right:5px;
+      }
+  }
+  #s4{
+      height:1000px;
+      .s2-caption{
+          margin-top:50px;
+      }
+  }
+  #faq-section{
+      height:900px;
+      .question{
+          width:500px;
+      }
+  }
+  #footer{
+      width:820px;
+      li{
+          font-size:20px;
+      }
+  }
+  .links-row{
+      width:700px;
+  }
 }
